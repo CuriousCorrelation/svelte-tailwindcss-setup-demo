@@ -1,2 +1,16 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import WindyButton from '../components/WindyButton.svelte';
+</script>
+
+<WindyButton
+	on:click={() => {
+		console.log('WindyButton clicked!');
+	}}
+/>
+
+<WindyButton
+	buttonText={'No, click me!'}
+	on:click={() => {
+		console.log('Other WindyButton clicked!');
+	}}
+/>
