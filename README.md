@@ -1,38 +1,54 @@
-# create-svelte
+# How to create a button component using `Svelte` + `TailwindCSS`
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
 
-## Creating a project
+## Step 1 - Create a new project using `SvelteKit`
 
-If you're seeing this, you've probably already done this step. Congrats!
+    > npm init svelte@next WindyButton
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
 
-# create a new project in my-app
-npm init svelte@next my-app
-```
+## Step 2 - Add `TailwindCSS` using `svelte-add`
 
-> Note: the `@next` is temporary
+    > cd WindyButton
+    > npx svelte-add@latest tailwindcss
+    > npm install
 
-## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Step 3 - Create the component
 
-```bash
-npm run dev
+    <!-- src/components/WindyButton.svelte -->
+    
+    <!-- Svelte event forwarding -->
+    <button on:click >Click me!</button>
+    <!-- Notice how you don't need to wrap the button in a div! -->
+    
+    <style>
+      button {
+        @apply bg-black text-white;
+        @apply p-2 m-2;
+        @apply font-bold;
+        @apply border-2 rounded-md border-gray-200;
+      }
+    </style>
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
 
-## Building
+## Step 4 - Use the component
 
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
+    <!-- src/routes/index.svelte -->
+    
+    <script>
+    	import WindyButton from '../components/WindyButton.svelte';
+    </script>
+    
+    <h1>Welcome to SvelteKit</h1>
+    
+    <WindyButton
+    	on:click={() => {
+    		console.log('WindyButton clicked!');
+    	}}
+    />
 
-```bash
-npm run build
-```
 
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+## Step 5 - Witness the glory
+
+![img](./res.png)
+
