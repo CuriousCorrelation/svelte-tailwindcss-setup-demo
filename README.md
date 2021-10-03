@@ -1,7 +1,7 @@
 # How to create a button component using `Svelte` + `Tailwind CSS`
 
 
-## Step 1 - Create a new project `SvelteKit` with `Tailwind CSS` using `svelte-add`
+## Step 1 - Create a new `SvelteKit` project with `Tailwind CSS` using `svelte-add`
     # Go through the interactive setup and choose Tailwind CSS
     > npm init @svelte-add/kit@latest
     # Or skip the process with this
