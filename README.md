@@ -1,19 +1,14 @@
-# How to create a button component using `Svelte` + `TailwindCSS`
+# How to create a button component using `Svelte` + `Tailwind CSS`
 
 
-## Step 1 - Create a new project using `SvelteKit`
-
-    > npm init svelte@next WindyButton
-
-
-## Step 2 - Add `TailwindCSS` using `svelte-add`
-
-    > cd WindyButton
-    > npx svelte-add@latest tailwindcss
-    > npm install
+## Step 1 - Create a new `SvelteKit` project with `Tailwind CSS` using `svelte-add`
+    # Go through the interactive setup and choose Tailwind CSS
+    > npm init @svelte-add/kit@latest
+    # Or skip the process with this
+    > npm init --yes @svelte-add/kit@latest WindyButton -- --with tailwindcss --demos false
 
 
-## Step 3 - Create the component
+## Step 2 - Create the component
 
     <!-- src/components/WindyButton.svelte -->
     
@@ -31,7 +26,7 @@
     </style>
 
 
-## Step 4 - Use the component
+## Step 3 - Use the component
 
     <!-- src/routes/index.svelte -->
     
@@ -48,7 +43,7 @@
     />
 
 
-## Step 5 - Witness the glory
+## Step 4 - Witness the glory
 
 ![img](./res.png)
 
