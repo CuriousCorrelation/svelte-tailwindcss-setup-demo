@@ -89,9 +89,9 @@
     picomatch "^2.2.2"
 
 "@sveltejs/kit@next":
-  version "1.0.0-next.197"
-  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-1.0.0-next.197.tgz#08331a0498e4c01c3fa17c8e8e8906454e2140b1"
-  integrity sha512-kxs820/UODwYyi5dZaCUFhfFT5M/kaGbxbbGUANBzUnvE8O6dnMZUsJtb2w8IepnjWAn5AWtYfaqhFS1gTdMxw==
+  version "1.0.0-next.200"
+  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-1.0.0-next.200.tgz#b7558153043b2e8b3fc3a00c17738c62122494ee"
+  integrity sha512-UuUiZ5HhqQyjfq/MP3ak+zfzwh3jm+AOJ5n5tncfAd8B9lUWiuNBcYw9VHvxjO63t1eKsNbf3l7TIvfuUO6NBA==
   dependencies:
     "@sveltejs/vite-plugin-svelte" "^1.0.0-next.30"
     cheap-watch "^1.0.4"
